@@ -203,14 +203,20 @@ footer{
 
 @media screen and (max-width:480px){
     header{
-        width: 100em;
+        width: 100%;
+        
+        
+    }
+    header h1{
+      margin-left: 30px;
+      
     }
     .txt{
         padding: 2%;
-        width: 80em;
-        margin-left: 25%;
+        width: 20em;
+        margin-left: 15%;
         margin-right: 10%;
-        height: 50em;
+        height: 30em;
         background-color:rgb(81, 82, 86);
         border-radius: 25px;
         margin-top: 15em; 
@@ -222,21 +228,21 @@ footer{
 
     .cuadrotxt{
         position: absolute;
-        top: 60em;
+        top: 40em;
         height: 25rem;
         background-color: rgb(81, 82, 86);
         border-radius: 20px;
-        width: 80em;
+        width: 20em;
         padding: 5px;
         margin-top: 10em;
-        margin-left: 10em;
+        margin-left: 15%;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .botones{
-        margin-left: 35em;
+        margin-left: 0em;
         margin-right: 0em;
       }
       .boton{
@@ -253,9 +259,9 @@ footer{
 
     
     footer{
-        width: 100em;
+        width: 100%;
         position: absolute;
-        top: 100em;
+        top: 80em;
     }
 }
 
