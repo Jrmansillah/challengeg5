@@ -1,0 +1,267 @@
+
+
+body{
+    font-family: 'Chewy', cursive;
+    background-color: rgb(35, 37, 44);
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-block-end: 10px;
+    color: #e7dfdf;
+}
+
+header img{
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    display:block;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    flex-wrap: nowrap;
+}
+
+.text{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.txt{
+    padding: 2%;
+    width: 35em;
+    margin-left: 20%;
+    margin-right: 5%;
+    height: 22em;
+    background-color:rgb(81, 82, 86);
+    border-radius: 25px;
+    margin-top: 12em; 
+    border: none;
+    text-align: center;
+    display: flex;
+    color: #e7dfdf;
+    font-family: 'Chewy', cursive;
+    
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-left: 11em;
+    margin-right: 10em;
+    margin-top: 5em;
+    margin-block-end: 5em;
+}
+
+.boton-1{
+    padding: 10px;  
+    border: none;
+    background-color: azure;
+    color: rgb(12, 10, 10);
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 25px;
+    margin-right: 2em;
+    
+  }
+  .boton-2{
+    padding: 10px;  
+    border: none;
+    background-color: azure;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 25px;
+    margin-left: 2em;
+    
+   
+  }
+
+
+  .boton-1:hover{
+    background-color: #66676a;
+    
+    
+  }
+  
+  .boton-2:hover{
+    background-color: #66676a;
+  }
+
+  
+  .cuadrotxt{
+    margin-right: 5%;
+    height: 25rem;
+    background:rgb(81, 82, 86);
+    border-radius: 20px;
+    width: 20%;
+    padding: 5px;
+    margin-top: 10em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e7dfdf;
+  }
+  .boton{
+    position: absolute;
+    top: 32em;
+    padding: 10px;
+    display: block;
+    width: 10em;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: azure;
+    border: none;
+    font-size: 16px;
+    
+  }
+
+  .boton:hover{
+    background-color: #66676a;
+    
+  }
+  .alerta {
+    display: none;
+    position: fixed;
+    width: 10em;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #66676a;
+    border: 1px solid darkred;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.alerta.mostrar {
+    display: block;
+}
+
+  
+
+  
+footer{
+    position: absolute;
+    top: 40em;
+    text-align: center;
+    padding: 20px;
+    color: #e7dfdf;
+    height: 40%;
+    width: 100%;
+    margin-block-end: 50em;
+
+
+}
+
+@keyframes animacion-180 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+     
+     
+    }
+  }
+  
+  
+  
+  .animacion-180 {
+    animation: animacion-180 1s ease-in-out forwards;
+    animation-fill-mode: both;
+  }
+
+  .animacion-180::after {
+    /* Propiedades de pseudo-elemento después de la animación */
+    content: ""; /* Agrega contenido para que el pseudo-elemento aparezca */
+    display: block; /* Muestra el pseudo-elemento */
+    position: absolute; /* Posición absoluta para que no afecte la animación */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  }
+  
+  
+
+  
+  
+ 
+
+@media screen and (max-width:480px){
+    header{
+        width: 100em;
+    }
+    .txt{
+        padding: 2%;
+        width: 80em;
+        margin-left: 25%;
+        margin-right: 10%;
+        height: 50em;
+        background-color:rgb(81, 82, 86);
+        border-radius: 25px;
+        margin-top: 15em; 
+        border: none;
+        text-align: center;
+        display: flex;
+        
+    }
+
+    .cuadrotxt{
+        position: absolute;
+        top: 60em;
+        height: 25rem;
+        background-color: rgb(81, 82, 86);
+        border-radius: 20px;
+        width: 80em;
+        padding: 5px;
+        margin-top: 10em;
+        margin-left: 10em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .botones{
+        margin-left: 35em;
+        margin-right: 0em;
+      }
+      .boton{
+        position: absolute;
+        top: 28em;
+        margin: 10px;
+      }
+
+      .alerta{
+        display: none;
+        position: fixed;
+        top: 3%;
+      }
+
+    
+    footer{
+        width: 100em;
+        position: absolute;
+        top: 100em;
+    }
+}
+
+
+
+
+
+
+
